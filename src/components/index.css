@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Urbanist", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'manrope';
+    src: url(./fonts/manrope/Manrope-Regular.ttf) format(opentype);
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'staatliches';
+    src: url(./fonts/staatliches/Staatliches-Regular.ttf) format(opentype);
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'italianno';
+    src: url(./fonts/italianno/Italianno-Regular.ttf) format(opentype);
+}
+@font-face {
+    font-family: 'urbanist';
+    src: url(./fonts/urbanist/Urbanist-Regular.ttf) format(opentype);
+}

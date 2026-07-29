@@ -1,0 +1,146 @@
+.hero-content{
+    display: flex;
+    height: 100dvh;
+}
+
+.image-slide{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(14, 14, 41, 0.401);
+        z-index: 1;
+    }
+}
+
+.image-slide .img-slide{
+    width: 100%;
+    height: 100dvh;
+    object-fit: cover;
+    transition: .5s ease-in-out;
+}
+
+.about-image{
+    position: relative;
+}
+
+.about-image img{
+    width: 500px;
+    height: 500px;
+    border-radius: 14px;
+}
+
+.title-services{
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.title-services::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(100%);
+    width: 50px;
+    height: 2px;
+    background: #00B571;
+}
+
+.title-services::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-100%);
+    width: 50px;
+    height: 2px;
+    background: #00B571;
+}
+
+iframe{
+    border-radius: 10px;
+    width: 700px;
+    height: 430px;
+}
+
+@media screen and (max-width: 1023px) {
+    .about-image img{
+        width: 70%;
+        margin: auto;
+    }
+    iframe{
+        height: 221px;
+    }
+}
+
+.card-item-pizzas{
+    position: relative;
+    height: 230px;
+}
+
+.card-item-pizzas::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #0a0f1aa0, #00000000);
+    z-index: 1;
+}
+
+.sectionCTA{
+    background: url(/src/assets/images/main/background-section.png) no-repeat center/cover;
+}
+
+@media screen and (max-width: 1023px){
+    .swiper-arrows{
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 30px;
+    }
+
+    .carousel-cards-button-next.swiper-button-disabled,
+    .carousel-cards-button-prev.swiper-button-disabled{
+        display: flex;
+    }
+    
+    .carousel-cards-button-next{
+        margin-left: 100px;
+    }
+
+    .carousel-cards-button-prev{
+        margin-left: -100px;
+    }
+
+    .carousel-cards-pagination{
+        transform: translateY(32px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about-image img{
+        width: 100%;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .arrows_slide{
+        display: none;
+    }
+    .about-image img{
+        width: 100%;
+        height: 100%;
+    }
+}

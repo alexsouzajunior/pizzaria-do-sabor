@@ -1,0 +1,92 @@
+.hero{
+    position: relative;
+}
+
+.card-categoria-massas{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card-image{
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: .75rem;
+    transition: 300ms;
+}
+
+.card-content:hover .card-image{
+    transform: scale(1.10);
+}
+
+.list-tabs-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    overflow: auto;
+    margin: auto;
+}
+
+.list-tabs{
+    background: #fff;
+    border: none;
+    width: 780px;
+    padding: 1rem;
+    box-shadow: none;
+    border-radius: 10px;
+}
+
+.Tab{
+    position: relative;
+    background: transparent;
+    color: #33C48D;
+    border: 1px solid #00b5707d;
+    padding: 5px 28px;
+    border-radius: 50px;
+    white-space: nowrap;
+    width: 230px;
+    outline: none;
+    overflow: hidden;
+    transition: .21s ease-in-out;
+    z-index: 1;
+    &[data-active]{
+        color: white;
+        background: #00B571;
+    }
+    &[data-active]:hover{
+        color: white;
+    }
+
+    &:hover{
+        color: white;
+        background: #00B571;
+    }
+
+    &:hover::after{
+        width: 100%;
+        clip-path: circle(100% at 50% 50%);
+    }
+}
+
+.Painel{
+    transition: .5s ease-in-out;
+    outline: none;
+    opacity: 1;
+    margin-top: 10px;
+
+    &[data-starting-style]{
+        opacity: 0;
+    }
+
+    &[data-ending-style]{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-image{
+        width: 100%;
+    }
+}
