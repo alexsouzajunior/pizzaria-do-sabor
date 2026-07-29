@@ -6,7 +6,6 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        manrope: ['manrope', 'sans-serif'],
         'staatliches': ['staatliches', 'serif'],
         'italianno': ['italianno', 'cursive'],
         'urbanist' : ['urbanist', 'sans-serif']

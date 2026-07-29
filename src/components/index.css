@@ -11,12 +11,6 @@ html{
 }
 
 @font-face {
-    font-family: 'manrope';
-    src: url(./fonts/manrope/Manrope-Regular.ttf) format(opentype);
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
     font-family: 'staatliches';
     src: url(./fonts/staatliches/Staatliches-Regular.ttf) format(opentype);
     font-style: normal;

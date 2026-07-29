@@ -30,19 +30,15 @@
 }
 
 .list-tabs{
-    background: #fff;
-    border: none;
     width: 780px;
     padding: 1rem;
-    box-shadow: none;
-    border-radius: 10px;
 }
 
 .Tab{
     position: relative;
     background: transparent;
-    color: #33C48D;
-    border: 1px solid #00b5707d;
+    color: var(--color-button-tab);
+    border: 1px solid var(--border-color-button-tab);
     padding: 5px 28px;
     border-radius: 50px;
     white-space: nowrap;
@@ -52,16 +48,16 @@
     transition: .21s ease-in-out;
     z-index: 1;
     &[data-active]{
-        color: white;
-        background: #00B571;
+        background: var(--background-button-tab-active);
+        color: var(--color-button-tab-active);
     }
     &[data-active]:hover{
-        color: white;
+        color: var(--color-button-tab-active-hover);
     }
 
     &:hover{
-        color: white;
-        background: #00B571;
+        background: var(--background-button-tab-hover);
+        color: var(--color-button-tab-hover);
     }
 
     &:hover::after{

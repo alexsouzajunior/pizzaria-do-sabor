@@ -7,7 +7,6 @@ import { faStar, faChevronLeft, faChevronRight, faQuoteRight } from '@fortawesom
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css'
-import 'swiper/css/effect-fade';
 import './testimonials.css'
 import imagemContainerComentarios from '../../assets/images/main/imagem-container-comentarios.png'
 

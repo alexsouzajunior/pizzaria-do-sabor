@@ -1,0 +1,31 @@
+:root{
+    --color-navlinks: #fff;
+    --color-navlink-active: #fff;
+    --color-navlinks-hover: #FF7B1D;
+    --background-underline-navlinks: #fff;
+    --background-menu: #fff;
+
+    --background-header-sticky: #fff;
+
+    --color-nav-logo-links-sticky: #000;
+    --color-logo-secondary-sticky: #FF7B1D;
+    --color-navlinks-hover-sticky: #FF7B1D;
+    --color-navlinks-underline-sticky: #FF7B1D;
+    --color-icon-open-menu-sticky: #000;
+    
+    --color-icon-open-menu: #fff;
+    --color-icon-close-menu: #000;
+    --color-logo-menu: #000;
+    --color-logo-secondary: #FF7B1D;
+    --color-navlinks-menu: #000;
+    --color-navlink-active-menu: #000;
+    --background-underline-navlinks-menu: #FF7B1D;
+
+    --color-button-tab: #33C48D;
+    --border-color-button-tab: #00b5707d;
+    --background-button-tab-active: #00B571;
+    --color-button-tab-active: #fff;
+    --color-button-tab-active-hover: #fff;
+    --background-button-tab-hover: #00B571;
+    --color-button-tab-hover: #fff;
+}

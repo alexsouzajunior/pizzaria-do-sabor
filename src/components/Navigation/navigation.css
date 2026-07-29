@@ -5,65 +5,35 @@ header.sticky{
     left: 50%;
     transform: translateX(-50%);
     border-radius: 10px;
-    background: #fff;
+    background: var(--background-header-sticky);
     box-shadow: rgba(15, 17, 12, .15) 0 3px 8px;
     z-index: 100;
 }
 
-header.sticky :is(.logo, .navlinks li .navlink, .nav-btn){
-    color: #000;
+header.sticky :is(.logo, .navlinks li .navlink){
+    color: var(--color-nav-logo-links-sticky);
 }
 
 header.sticky .logo span{
-    color: #FF7B1D;
+    color: var(--color-logo-secondary-sticky);
 }
-
-header.sticky .dropdown-cardapio-container .dropdown-name,
-header.sticky .dropdown-cardapio-container .dropdown-icon{
-    color: #000;
-}
-header.sticky .dropdown-cardapio-container:hover .dropdown-name,
-header.sticky .dropdown-cardapio-container:hover .dropdown-icon{
-    color: #FF7B1D;
-}
-
-header.sticky .nav-button{
-    color: #000;
-}
-
-header.sticky .nav-button:hover{
-    color: #fff;
-}
-
 
 header.sticky .navlinks li a:hover{
-    color: #FF7B1D;
-}
-
-header.sticky .socials-icons{
-    color: #000;
-}
-
-header.sticky .socials-icons:hover{
-    color: #fff;
+    color: var(--color-navlinks-hover-sticky);
 }
 
 header.sticky .navlinks .navlink::after{
-    background: #FF7B1D;
+    background: var(--color-navlinks-underline-sticky);
 }
 
 .navlinks .navbar-links .navlink{
     position: relative;
-    color: #fff;
+    color: var(--color-navlinks);
     transition: .7s ease;
 }
 
-.navbar-links .navlink:hover{
-    color: #fff;
-}
-
 .navlinks li a:hover{
-    color: #FF7B1D;
+    color: var(--color-navlinks-hover);
 }
 
 .navlinks .navbar-links .navlink::after{
@@ -75,7 +45,7 @@ header.sticky .navlinks .navlink::after{
     transform: scale(0);
     width: 100%;
     height: 2px;
-    background: #fff;
+    background: var(--background-underline-navlinks);
     border-radius: 10px;
     transition: transform 400ms;
 }
@@ -86,7 +56,7 @@ header.sticky .navlinks .navlink::after{
 }
 
 .navlinks .navbar-links a.active{
-    color: #fff;
+    color: var(--color-navlink-active);
 }
 
 .navlinks .navbar-links a.active::after{
@@ -97,238 +67,6 @@ header.sticky .navlinks .navlink::after{
     opacity: 0;
     visibility: hidden;
     transition: .5s ease-in-out;
-}
-
-.dropdown-cardapio-container{
-    display: flex;
-    align-items: center;
-    gap: .5rem;
-    anchor-name: --my-anchor;
-    cursor: pointer;
-    width: 100%;
-    margin: auto;
-    transition: .7s ease;
-}
-
-.dropdown-cardapio-container .dropdown-name{
-    color: #fff;
-}
-
-.dropdown-cardapio-container .dropdown-icon{
-    color: #fff;
-    font-size: .85rem;
-    transition: .7s ease;
-}
-
-/* .dropdown-cardapio-container:hover{
-    color: #FF7B1D;
-} */
-
-.dropdown-cardapio-container:hover .dropdown-icon{
-    color: #fff;
-    transform: rotate(180deg);
-}
-
-.dropdown-cardapio{
-    position: fixed;
-    top: 0;
-    position-anchor: --my-anchor;
-    position-area: bottom;
-    position-try-fallbacks: --dropdown-bottom;
-    background: #fff;
-    padding: 0;
-    width: 140px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-    overflow: hidden;
-    opacity: 0;
-    visibility: hidden;
-    transition: 300ms;
-}
-
-.dropdown-cardapio .dropdown-links .navlink:hover{
-    background: #ffe4d1;
-}
-
-@position-try --dropdown-bottom{
-    position-area: bottom;
-}
-
-.dropdown-links .arrow-right{
-    transition: 300ms;
-}
-
-.dropdown-cardapio-container:hover .dropdown-cardapio{
-    opacity: 1;
-    visibility: visible;
-}
-
-.dropdown-menu-mobile.show_dropdown{
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(10%);
-}
-
-.dropdown-links .arrow-right{
-    font-size: .85rem;
-}
-
-.container-form{
-    background: #fff;
-}
-
-.box-input{
-    position: relative;
-}
-
-.underline-input{
-    position: relative;
-}
-
-.underline-input::before{
-    content: "";
-    position: absolute;
-    bottom: 16px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: #1ca530;
-    transition: .3s ease-in-out;
-}
-
-.box-input :is(input, select):focus ~ .underline-input::before,
-.box-input :is(input, select):valid ~ .underline-input::before {
-    width: 100%;
-}
-
-.box-input select option{
-    color: #1f1f1f;
-}
-
-.box-input .MuiFormControl-root{
-    margin-bottom: 10px;
-}
-
-.box-input .MuiPickersOutlinedInput-notchedOutline{
-    border: none;
-    border-bottom: 1px solid gray;
-}
-
-.box-input .MuiPickersInputBase-root{
-    border-radius: 0;
-}
-
-.box-input .label-input{
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(50%);
-    background: #fff;
-    color: #2f2f2f;
-    padding: 0 10px;
-    transition: .25s ease-in-out;
-}
-
-.box-input input:is(:valid, :focus) + .label-input,
-.box-input select:is(:valid, :focus) + .label-input{
-    left: 4px;
-    transform: translateY(-50%) scale(.85);
-    color: #2e2e2e;
-}
-
-.box-input input:is(:valid, :focus),
-.box-input select:is(:valid, :focus){
-    border: 2px solid #00B571;
-    padding: 0 1rem;
-}
- 
-.modal-reserva-form{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 512px;
-    max-width: 100%;
-    background: #fff;
-    padding: 1rem;
-    border-radius: 12px;
-    margin: auto;
-    opacity: 0;
-    visibility: hidden;
-    transition: .4s ease-in-out;
-    z-index: 1000;
-}
-
-.modal-reserva-form.show_modal_reserva_form{
-    opacity: 1;
-    visibility: visible;
-    transition: .4s ease-in-out;
-}
-
-.modal-overlay{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100dvh;
-    background: rgb(51 65 85 / 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transition: 300ms;
-    z-index: 100;
-}
-
-.modal-overlay.show_modal_overlay{
-    opacity: 1;
-    visibility: visible;
-}
-
-@media screen and (max-width: 1024px) {
-    .container-form{
-        background: rgba(255, 255, 255);
-        backdrop-filter: blur(7.5px);
-        border: 1px solid rgba(255, 255, 255);
-    }
-
-    .box-input .label-input{
-        background: transparent;
-        color: #80828D;
-    }
-
-    .box-input input:is(:valid, :focus) + .label-input,
-    .box-input select:is(:valid, :focus) + .label-input{
-        background: #fff;
-        color: #80828D;
-    }
-
-    /* .box-input input:is(:valid, :focus),
-    .box-input select:is(:valid, :focus){
-        border: 0;
-    } */
-
-    .box-input .MuiFormLabel-root{
-        color: #80828D;
-    }
-
-    .box-input .MuiPickersOutlinedInput-notchedOutline{
-        border-bottom: 1px solid #80828D;
-    }
-
-    .box-input .MuiFormLabel-root{
-        font-family: "Manrope", sans-serif;
-    }
-
-    .box-input .MuiPickersInputBase-root{
-        padding: 0 5px;
-    }
-
-    .box-input .MuiSvgIcon-root{
-        color: #80828D;
-    }
-
-    .underline-input::before{
-        background: #5FBA7C;
-    }
 }
 
 @media screen and (max-width: 1250px) {
@@ -344,13 +82,14 @@ header.sticky .navlinks .navlink::after{
 }
 
 @media screen and (max-width: 780px) {
-    .nav-btn{
-        color: #fff;
+    .icon-open-menu{
+        color: var(--color-icon-open-menu);
     }
-    .nav-close-btn{
-        color: #000;
+    .icon-close-menu{
+        color: var(--color-icon-close-menu);
     }
-    .nav-btn svg{
+    .icon-open-menu svg,
+    .icon-close-menu svg{
         width: 34px;
         height: 34px;
     }
@@ -361,8 +100,11 @@ header.sticky .navlinks .navlink::after{
         transform: translateX(0);
         border-radius: 0;
     }
-    header.sticky .navlinks li a::after{
-        background: #1CA350;
+    header.sticky .icon-open-menu{
+        color: var(--color-icon-open-menu-sticky);
+    }
+    header.sticky .icon-close-menu svg{
+        color: var(--color-icon-close-menu-sticky);
     }
 
     .navigation .navlinks{
@@ -380,15 +122,15 @@ header.sticky .navlinks .navlink::after{
     }
 
     .navlinks .navbar-links .navlink{
-        color: #000;
+        color: var(--color-navlinks-menu);
     }
 
     .navlinks .navbar-links a.active{
-        color: #000;
+        color:var(--color-navlink-active-menu);
     }
 
     .navlinks .navbar-links .navlink::after{
-        background: #FF7B1D;
+        background: var(--background-underline-navlinks-menu);
         transition: transform 500ms;
     }
 
@@ -398,7 +140,7 @@ header.sticky .navlinks .navlink::after{
         right: -1000px;
         width: 50%;
         height: 100vh;
-        background: #fff;
+        background: var(--background-menu);
         padding: 90px 20px;
         transition: .5s ease;
         z-index: 10;
@@ -409,57 +151,16 @@ header.sticky .navlinks .navlink::after{
     }
 
     .logo-menu .logo{
-        color: #000;
+        color: var(--color-logo-menu);
     }
 
     .logo-menu .logo span{
-        color: #FF7B1D;
+        color: var(--color-logo-secondary);
     }
 
     .navigation-overlay.show_overlay{
         opacity: 1;
         visibility: visible;
-    }
-
-    .dropdown-cardapio-container{
-        justify-content: start;
-    }
-
-    .dropdown-cardapio{
-        position: relative;
-        top: 0;
-        right: 0;
-        height: 0;
-        width: 100%;
-        transform: translateY(0);
-        box-shadow: none;
-        z-index: 100;
-    }
-
-    .dropdown-cardapio.show_dropdown{
-        height: 100%;
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .dropdown-cardapio-container .dropdown-name,
-    .dropdown-cardapio-container .dropdown-icon{
-        color: #000;
-    }
-
-    .dropdown-cardapio-container:hover .dropdown-icon{
-        transform: rotate(0);
-        color: #000;
-    }
-
-    .dropdown-cardapio .dropdown-links .dropdown-link{
-        color: #000;
-    }
-
-    .nav-button{
-        color: #000;
-        width: 100%;
     }
 }
 
@@ -470,12 +171,6 @@ header.sticky .navlinks .navlink::after{
 }
 
 @media screen and (max-width: 430px) {
-    .navigation .logo{
-        color: #000;
-    }
-    .navigation .logo span{
-        color: #FF7B1D;
-    }
     .menu{
         width: 100%;
     }
