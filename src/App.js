@@ -1,5 +1,4 @@
 import Navigation from './components/Navigation/Navigation';
-import LoadingPage from './components/loading';
 
 import {
   BrowserRouter,
@@ -13,8 +12,7 @@ import Footer from './components/Footer/footer';
 
 function App() {
   return (
-    <BrowserRouter>
-      <LoadingPage/> 
+    <BrowserRouter> 
       <Navigation />
       
           <Routes>
