@@ -93,33 +93,6 @@ header.sticky .navlinks .navlink::after{
     transform: scale(1);
 }
 
-.nav-button{
-    border: 1px solid #00B571;
-    padding: 10px 21px;
-    border-radius: 50px;
-    color: #fff;
-    transition: .3s ease-in-out;
-
-    &:hover{
-        background: #00B571;
-        color: #fff;
-    }
-}
-
-.nav-button.active{
-    display: none;
-}
-
-/* .reserva-form{
-    opacity: 0;
-    visibility: hidden;
-}
-
-.reserva-form.show_reserva_form{
-    opacity: 1;
-    visibility: visible;
-} */
-
 .navigation-overlay{
     opacity: 0;
     visibility: hidden;
@@ -377,6 +350,10 @@ header.sticky .navlinks .navlink::after{
     .nav-close-btn{
         color: #000;
     }
+    .nav-btn svg{
+        width: 34px;
+        height: 34px;
+    }
     header.sticky{
         top: 0;
         width: 100%;
@@ -486,13 +463,13 @@ header.sticky .navlinks .navlink::after{
     }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 610px) {
     .menu{
         width: 70%;
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
     .navigation .logo{
         color: #000;
     }

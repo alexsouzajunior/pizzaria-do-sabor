@@ -1,6 +1,8 @@
 import './navigation.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faX} from '@fortawesome/free-solid-svg-icons';
+import { HugeiconsIcon } from '@hugeicons/react';
+import { Menu01Icon, Cancel01Icon } from '@hugeicons/core-free-icons';
 import iconeLogo from '../../assets/images/logos/pizza-icone.png';
 import { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -60,13 +62,13 @@ const Navigation = () => {
               <li className='navbar-links'>
                 <HashLink to="/#avaliacoes" onClick={navbarLinks} className='navlink'>Avaliações</HashLink>
               </li>
-              <div className='nav-btn nav-close-btn text-slate-950 text-xl cursor-pointer hidden max-[780px]:block max-[780px]:absolute max-[780px]:top-5 max-[780px]:right-5'>
-                <FontAwesomeIcon icon={faX} onClick={closeNavbar} />
+              <div className='nav-btn nav-close-btn text-slate-950 text-xl cursor-pointer hidden max-[780px]:block max-[780px]:absolute max-[780px]:top-[1.57rem] max-[780px]:right-[1rem]'>
+                <HugeiconsIcon icon={Cancel01Icon} onClick={closeNavbar} />
               </div>
             </ul>
           </div>
-          <div className='nav-btn nav-icon-menu text-slate-950 text-2xl cursor-pointer hidden max-[780px]:block'>
-            <FontAwesomeIcon icon={faBars} onClick={showNavbar} />
+          <div className='nav-btn nav-icon-menu text-slate-950 cursor-pointer hidden max-[780px]:block'>
+            <HugeiconsIcon icon={Menu01Icon} onClick={showNavbar} />
           </div>
         </nav>
       </header>
