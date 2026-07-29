@@ -6,6 +6,7 @@ import profileImg4 from '../../assets/images/testimonials/profile4.jpg';
 import { faStar, faChevronLeft, faChevronRight, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import 'swiper/css'
 import 'swiper/css/effect-fade';
 import './testimonials.css'
 import imagemContainerComentarios from '../../assets/images/main/imagem-container-comentarios.png'

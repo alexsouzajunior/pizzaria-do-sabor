@@ -1,8 +1,6 @@
 import { Tabs } from '@base-ui/react'
 import { HugeiconsIcon } from '@hugeicons/react';
 import { Pizza01Icon, NoodlesIcon, SodaCanIcon } from '@hugeicons/core-free-icons';
-import 'swiper/css'
-import 'swiper/css/navigation'
 import heroVideo from '../images/cardapio/videos/video-pizza.mp4'
 import imagePizzaCalabresa from '.././images/cardapio/pizzas/pizza-de-calabresa.png'
 import imagePizzaMussarela from '.././images/cardapio/pizzas/pizza-de-mussarela.png'
